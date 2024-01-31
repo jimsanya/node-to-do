@@ -18,6 +18,7 @@ let client;
 async function init() {
     const host = HOST_FILE ? fs.readFileSync(HOST_FILE) : HOST;
     const user = USER_FILE ? fs.readFileSync(USER_FILE) : USER;
+    console.log('ENV',process.env);
     const password = PASSWORD_FILE ? fs.readFileSync(PASSWORD_FILE, 'utf8') : PASSWORD;
     const database = DB_FILE ? fs.readFileSync(DB_FILE) : DB;
 
